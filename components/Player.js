@@ -53,7 +53,7 @@ function Player() {
       setVolume(50);
     }
   }, [currentTrackIdState, spotifyApi, session]);
-  // debouncing the volume of the spotify app
+  // debouncing the volume of the spotify app very important
   useEffect(() => {
     if (volume > 0 && volume < 100) {
       debouncedAdjustVolume(volume);
